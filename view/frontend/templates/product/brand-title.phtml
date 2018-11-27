@@ -1,0 +1,6 @@
+<?php
+    $_product = $this->getProduct();
+    $_helperBrand = $this->helper('Simple\Brands\Helper\Data');
+    $_helperBrand->getBrandImage($_product);
+?>
+<p class="brand__title"><?= $_helperBrand->getTitle();?></p>

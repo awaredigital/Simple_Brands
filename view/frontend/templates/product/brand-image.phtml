@@ -1,0 +1,11 @@
+<?php
+    $_product = $this->getProduct();
+    $_helperBrand = $this->helper('Simple\Brands\Helper\Data');
+    $_helperBrand->getBrandImage($_product);
+
+    if($_helperBrand->getImageUrl()):
+?>
+    <div class="brand__image">
+        <img src="<?= $_helperBrand->getImageUrl(); ?>" alt="Brand <?= $_helperBrand->getTitle();?>" />
+    </div>
+<?php endif; ?>

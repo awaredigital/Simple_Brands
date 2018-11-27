@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2018 Amasty (https://www.amasty.com)
+ * @package Amasty_ShopbyBase
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- <preference for="Amasty\ShopbyBase\Plugin\Catalog\Block\Product\View\BlockHtmlTitlePluginAbstract"
+                type="Simple\Brands\Plugin\StopTitlePluginAbstract" /> -->
+
+    <type name="Magento\Theme\Block\Html\Title">
+        <plugin name="block.title.plugin" type="Simple\Brands\Plugin\StopTitlePluginAbstract" sortOrder="999" />
+        
+    </type>
+
+
+</config>
